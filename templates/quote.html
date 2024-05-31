@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+
+{% block titles %}
+<div class="jumbotron jumbotron-fluid" >
+    <div class = "blur">
+
+    </div>
+    <div class="container main-text neontext" >
+        
+            <h1 id="FutureSee" class="display-4">Get a Quote</h1>
+        </div>
+    </div>
+{% endblock %}
+
+{% block results %}
+
+<h2>Please fill these details to get instant quote:</h2><br>
+<div class="control-group register-form d-flex justify-content-center">
+    <form action="/quote" method="post">
+        Choose the shape of your yard:<br><br>
+        <select id="shape" name="shape">
+            <option value="circle">Circle (insert the diameter in the width textbox)</option>
+            <option value="rectangle">Rectangle, square or similar shape</option>
+            <option value="triangle">Triangle</option>
+          </select>     
+
+        <br><br>
+        <input type="number" name="width" id="width" placeholder="Width of area" required>
+        <br><br>
+        <input type="number" name="length" id="length" placeholder="Length of area" required>
+        <br><br>
+        Choose the Type of turf you desire:<br><br>
+        <select id="turf" name="turf">
+            <option value="50">Kikuyu Grass</option>
+            <option value="65">Perennial Ryegrass</option>
+            <option value="80">Buffalo Turf</option>
+            <option value="95">Zoysia Grass</option>
+          </select>     
+        <br><br>
+    
+
+
+
+        <input type="submit" id="btnq" value="Get a Quote!!!" class="btn btn-primary btn-large">
+    </form> 
+</div>
+    
+
+
+{% endblock %}

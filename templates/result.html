@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block titles %}
+<div class="jumbotron jumbotron-fluid" >
+    <div class = "blur">
+
+    </div>
+    <div class="container main-text neontext" >
+		
+            <h1 id="FutureSee" class="display-4">Here is your personalised quote</h1>
+            <p class="lead"># Terms and coniditions apply, please speak to our representatives to learn more.</p>
+        </div>
+    </div>
+{% endblock %}
+
+{% block results %}
+<div>
+    <ul>
+        <li>You need <h6>{{ turf_area }} m<sup>2</sup></h6>to cover your yard.</li><br><br>
+        <li>It will cost you <h6>$ {{ cost_subtotal }} </h6>to lay the choosen turf on your yard #.</li><br><br>
+        <li>We offer professional turf laying, it will cost you <h6>${{ labor_cost }}</h6>to profesionaly lay turf on with us.</li><br><br>
+        <li>The total cost of shiping your desired turf is <h6>${{ ship_cost }}</h6> .</li><br><br>
+        <li>The total price if you choose to use all our services is <h6>${{ total }}</h6>inc. GST.</li><br><br>
+    </ul>
+</div>
+
+
+			
+<input type="submit" id="btnq" value="Get started!!!" class="btn btn-primary btn-large">
+
+{% endblock %}

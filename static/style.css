@@ -1,0 +1,176 @@
+* {
+  box-sizing: border-box;
+  font-size: 19px;
+  font-family: Verdana;
+  font-weight: 600;
+}
+html,body{
+    padding: 0px;
+    margin: 0;
+    background: #eeeeee !important; 
+    height: 100%;
+}
+h1 {
+  text-align: centre;
+  
+}
+*:focus {
+  outline: none;
+}
+
+
+.login {
+  margin: 20px auto;
+  width: 300px;
+}
+.login-screen {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.app-title {
+  text-align: center;
+  color: #777;
+}
+
+.login-form {
+  text-align: center;
+}
+.control-group {
+  margin-bottom: 10px;
+}
+h1 {
+  text-aliegn: centre;
+}
+
+input {
+  text-align: center;
+  background-color: #eeeeee;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  padding: 10px 0;
+  width: 250px;
+  transition: border 0.5s;
+}
+
+input:focus {
+  border: 2px solid #08ffff;
+  box-shadow: none;
+  background-color: #80f58e
+}
+
+.btn {
+  border: 2px solid transparent;
+  background: #3498db;
+  color: #ffffff;
+  line-height: 25px;
+  padding: 10px 0;
+  text-decoration: none;
+  text-shadow: none;
+  border-radius: 3px;
+  box-shadow: none;
+  transition: 0.25s;
+  display: block;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+.login-link {
+  color: #444;
+  display: block;
+  margin-top: 12px;
+}
+.jumbotron.jumbotron-fluid {
+  background: url("grass.jpg");
+  position: relative;
+}
+.blur{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: inherit;
+    overflow: hidden;
+
+}
+.blur::after {
+  content: "";
+  position: absolute;
+  width: 120%;
+  height: 120%;
+  box-shadow:inset 0 0 0 200px rgba(255, 255, 255, 0.05);
+  filter:blur(2px);
+  top: -10%;
+    left: -10%;
+  background: inherit;
+  z-index: 2;
+
+}
+.main-text {
+    position: relative;
+    z-index: 3;
+    text-align: center;
+
+}
+.neontext
+{
+    color: #000000 !important;
+    text-shadow:
+        0 0 7px #0092ca,
+        0 0 10px #0092ca,
+        0 0 21px #0092ca,
+        0 0 42px #0092ca,
+        0 0 82px #0092ca,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+}
+.nav-item:hover{
+    color: #000;
+    text-shadow:
+        0 0 7px #ddd,
+        0 0 10px #ddd,
+        0 0 21px #ddd,
+        0 0 42px #3e71e9,
+        0 0 82px #3e71e9,
+        0 0 92px #3e71e9,
+        0 0 102px #3e71e9,
+        0 0 151px #3e71e9;
+    border: none;
+}
+.nav-link:hover{
+    border: none !important;
+    border-color: transparent !important;
+}
+.navbar{
+
+}
+.navbar-brand{
+    color: #0092ca !important;
+    text-shadow:
+        0 0 7px #0092ca,
+        0 0 10px #0092ca,
+        0 0 21px #0092ca,
+        0 0 42px #0092ca,
+        0 0 82px #0092ca,
+        0 0 92px #fff,
+        0 0 102px #fff,
+        0 0 151px #fff;
+    font-weight: 900 !important;
+
+}
+#turf {
+  width: 300px;
+  background-color: #80f58e;
+}
+#shape{
+  width: 300px;
+  background-color: #6762fe;
+  color: white;    
+}

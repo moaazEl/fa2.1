@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+
+{% block titles %}
+<div class="jumbotron jumbotron-fluid" >
+    <div class = "blur">
+
+    </div>
+    <div class="container main-text neontext" >
+		
+            <h1 id="FutureSee" class="display-4">Register</h1>
+        </div>
+    </div>
+{% endblock %}
+
+{% block results %}
+
+
+<form action="/register" method="POST">
+<div class="register">
+<div class="register-screen">
+<div class="app-title">
+</div>
+<div class="register-form d-flex justify-content-center">
+<div class="control-group">
+
+
+<form action="/register" method="post">
+				<input type="text" name="user_name" id="user_name" placeholder="UserName" >
+    			<br>
+    			<input type="text" name="first_name" id="first_name" placeholder="First Name" required/>
+    			<br>
+    			<input type="text" name="last_name" id="last_name" placeholder="Last Name" required/>			
+    			<br>
+				<input type="email" name="email" id="email" placeholder="Email" required/>			
+    			<br>
+    			<input type="number" name="postcode" id="postcode" placeholder="Postcode" required/>
+    			<br>
+
+				<input type="submit" value="Register" class="btn btn-primary btn-large">
+	
+
+</div>
+
+</div>
+</div>
+</form>
+       {% if get_flashed_messages() %}
+            <div id="flashmessage" class="alert alert-danger"> <!-- server message returned -->
+            {% for message in get_flashed_messages() %}
+               <h1> <p>{{message}}</p> </h1>
+            {%endfor%}
+            </div>
+        {% endif %}
+
+{% endblock %}
